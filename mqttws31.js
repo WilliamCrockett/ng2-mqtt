@@ -80,9 +80,12 @@ function onMessageArrived(message) {
  * @namespace Paho.MQTT 
  */
 
-if (typeof Paho === "undefined") {
-	Paho = {};
-}
+ // hack fix
+// if (typeof Paho === "undefined") {
+// 	Paho = {};
+// }
+
+const Paho = {}
 
 Paho.MQTT = (function (global) {
 
